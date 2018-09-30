@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Employees.Business.Interfaces
+﻿namespace Employees.Business.Interfaces
 {
+    using Employees.Util.Dto;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
     public interface IEmployeesService
     {
-        Task<object> GetEmployeesAsync();
+        Task<IEnumerable<EmployeeDto>> GetEmployeesAsync();
+        Task<IEnumerable<EmployeeDto>> GetEmployeeByIdAsync(int id);
     }
 }

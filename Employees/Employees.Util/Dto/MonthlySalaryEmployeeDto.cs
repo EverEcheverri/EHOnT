@@ -2,6 +2,6 @@
 {
     public class MonthlySalaryEmployeeDto : EmployeeDto
     {
-        public int MonthlySalaryEmployee { get; set; }
+        public int MonthlySalary { get; set; }
     }
 }

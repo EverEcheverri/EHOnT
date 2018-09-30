@@ -56,6 +56,10 @@
       <Project>{c57f92d7-9106-467c-9a3c-fc7aa8ed175e}</Project>
       <Name>Employees.Repository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Employees.Util\Employees.Util.csproj">
+      <Project>{cc16955b-2e00-4b35-9ecc-c2f27b2b82ee}</Project>
+      <Name>Employees.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

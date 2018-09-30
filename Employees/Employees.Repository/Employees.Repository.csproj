@@ -60,5 +60,11 @@
   <ItemGroup>
     <Content Include="Entities\AddYourDaoHere.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Employees.Util\Employees.Util.csproj">
+      <Project>{cc16955b-2e00-4b35-9ecc-c2f27b2b82ee}</Project>
+      <Name>Employees.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
