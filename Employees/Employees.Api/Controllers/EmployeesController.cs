@@ -5,10 +5,12 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using System.Web.Http;
+    using System.Web.Http.Cors;
 
     /// <summary>
     /// 
     /// </summary>
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     public class EmployeesController : ApiController
     {
         private readonly IEmployeesService _employeesService;
